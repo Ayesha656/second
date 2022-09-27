@@ -1,0 +1,18 @@
+<?php
+class calculation{
+    public $name;
+    function __construct($name="hello"){
+        $this->name=$name;
+    }
+    function show(){
+        echo "your name is: " . $this->name ."\n";
+    }
+    
+}
+$cal1 = new calculation();
+$cal2=new calculation("ayesha");
+$cal1->show();
+echo "<br>";
+$cal2->show();
+
+?>

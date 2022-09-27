@@ -1,0 +1,40 @@
+<?php
+
+class A{
+    public $name;
+    public $age;
+    public $salary;
+    function __construct($name,$age,$salary){
+        $this->$name=$name;
+        $this->age=$age;
+        $this->salary=$salary;
+    
+    }
+echo "heelo";
+   
+}
+    class manager extends A{
+public $ta=1000;
+public $phone=300;
+public $totalsalry;
+
+
+         function info(){
+            $this->totalsalry= $this->phone+ $this->ta+ $this->salary;
+        echo "<h3> Employee Profile </h3>";
+        echo "Employee Name:" .$this->name ;
+        echo "Employee Age:" .$this->age ;
+        echo "Employee Salary:" .$this->salary;
+        echo "Total Salary Salary:" .$this->totalsalry;
+    }}
+
+$object1= new manager("ayesha",12,200); 
+$object1->info();
+$object2= new manager("ali",22,300); 
+$object2->info();
+
+
+
+
+
+?>

@@ -1,0 +1,25 @@
+<?php
+class calculation{
+    public $a,$b,$c,$name;
+    function sum(){
+        $this->c=$this->a +$this->b;
+        return $this->c; 
+    }
+
+    function sub(){
+        $this->c=$this->a - $this->b;
+        return $this->c;
+    }
+   function show_name(){
+        echo "your name is: ". $this->name ."\n";
+    }
+    
+}
+$cal1 = new calculation();
+    $cal1->a=10;
+    $cal1->b=20;
+  echo $cal1->sum();  
+  echo "<br>";
+  echo $cal1->sub();
+
+?>
